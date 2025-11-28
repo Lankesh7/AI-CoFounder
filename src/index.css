@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Synapse Dark Mode - Vibrant Neon */
+    --background: 0 0% 2%; /* Pure black */
+    --foreground: 0 0% 95%; /* Off-white */
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 195 100% 50%; /* Sky blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 145 80% 45%; /* Vibrant green */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 15%;
+    --ring: 195 100% 50%;
+
+    --radius: 1rem;
+
+    /* Custom Gradients - Orange, Yellow, Green, Sky Blue */
+    --trust-start: 195 100% 50%; /* Sky blue */
+    --trust-mid: 180 100% 40%; /* Teal */
+    --trust-end: 145 80% 45%; /* Green */
+
+    --ignition-start: 45 100% 55%; /* Yellow */
+    --ignition-mid: 30 100% 50%; /* Orange */
+    --ignition-end: 15 100% 50%; /* Red-orange */
+
+    --wisdom-start: 145 80% 45%; /* Green */
+    --wisdom-end: 195 100% 50%; /* Sky blue */
+
+    /* Aurora orb colors */
+    --aurora-orange: 30 100% 50%;
+    --aurora-yellow: 45 100% 55%;
+    --aurora-green: 145 80% 45%;
+    --aurora-skyblue: 195 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
